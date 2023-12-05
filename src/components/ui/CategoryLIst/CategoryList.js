@@ -12,7 +12,7 @@ const {data: allCategories} = await getAllCategories()
 {
     allCategories.map((category) => (
         <Button variant='outlined' key={category.id}>
-        <Link href={category.title}>
+        <Link href={`/categories/news?category=${category.title}`}>
         {category.title} 
         </Link>
         </Button>
